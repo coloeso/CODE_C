@@ -47,8 +47,7 @@ public:
     // 由于成员调用的函数，所以只需要自身和传递进来的另一个立方体的属性作比较，只需要传递一个参数即可
     bool isSameByClass(Cube &c)
     {
-        cout << m_attr.m_Length << c.m_attr.m_High << endl;
-        if (m_attr.m_Length == c.m_attr.m_High && m_attr.m_High == c.m_attr.m_High && m_attr.m_Weight == c.m_attr.m_Weight)
+        if (m_attr.m_Length == c.m_attr.m_Length && m_attr.m_High == c.m_attr.m_High && m_attr.m_Weight == c.m_attr.m_Weight)
         {
             return true;
         }
